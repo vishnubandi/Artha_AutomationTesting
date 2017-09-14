@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
    <!--    
-   		<class name="exe.HS_TS001_ConnCheck"/>
+   	  <class name="exe.HS_TS001_ConnCheck"/>
       <class name="exe.HS_TS002_RecCount"/>
       <class name="exe.HS_TS003_Record_Type_DataValidation"/>
 	  <class name="exe.HS_TS004_Mandatory_Column_Check"/>

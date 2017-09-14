@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/9/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 14 11:07:02 IST 2017</td>
+<td>Started on:</td><td>Thu Sep 14 12:08:44 IST 2017</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2130 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1560 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -328,14 +328,14 @@ function toggleAllBoxes() {
 <td>exe.Arthadb_Automation@5700d6b1</td></tr>
 <tr>
 <td title='exe.Arthadb_Automation.ArthaDB_ProdCodes_Check_TC001()'><b>ArthaDB_ProdCodes_Check_TC001</b><br>Test class: exe.Arthadb_Automation</td>
-<td><div><pre>junit.framework.AssertionFailedError: AUDIT-Product Codes check is Failed at UniqueID=J901891D18902,J911620FS4904, expected:&lt;0&gt; but was:&lt;2&gt;
+<td><div><pre>junit.framework.AssertionFailedError: AUDIT-Product Codes check is Failed at UniqueID=J911620FS4904, expected:&lt;0&gt; but was:&lt;1&gt;
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
 	at junit.framework.Assert.assertEquals(Assert.java:78)
 	at junit.framework.Assert.assertEquals(Assert.java:234)
 	at exe.Arthadb_Automation.ArthaDB_ProdCodes_Check_TC001(Arthadb_Automation.java:65)
 ... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace630074945", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace630074945'><pre>junit.framework.AssertionFailedError: AUDIT-Product Codes check is Failed at UniqueID=J901891D18902,J911620FS4904, expected:&lt;0&gt; but was:&lt;2&gt;
+<div class='stack-trace' id='stack-trace630074945'><pre>junit.framework.AssertionFailedError: AUDIT-Product Codes check is Failed at UniqueID=J911620FS4904, expected:&lt;0&gt; but was:&lt;1&gt;
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
 	at junit.framework.Assert.assertEquals(Assert.java:78)
@@ -366,7 +366,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>0</td>
+<td>1</td>
 <td>exe.Arthadb_Automation@5700d6b1</td></tr>
 <tr>
 <td title='exe.Arthadb_Automation.ArthaDB_Record_Type_Check_TC008()'><b>ArthaDB_Record_Type_Check_TC008</b><br>Test class: exe.Arthadb_Automation</td>
@@ -452,6 +452,52 @@ function toggleAllBoxes() {
 </pre></div></td>
 <td>0</td>
 <td>exe.Arthadb_Automation@5700d6b1</td></tr>
+<tr>
+<td title='exe.ExcelRun.TestRunFinalProcess()'><b>TestRunFinalProcess</b><br>Test class: exe.ExcelRun</td>
+<td><div><pre>java.io.FileNotFoundException: C:\Artha\ArthaDB_Automation_TestResults.xls (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at jxl.Workbook.createWorkbook(Workbook.java:301)
+	at jxl.Workbook.createWorkbook(Workbook.java:286)
+	at exe.ExcelRun.TestRunFinalProcess(ExcelRun.java:30)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2041416495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2041416495'><pre>java.io.FileNotFoundException: C:\Artha\ArthaDB_Automation_TestResults.xls (The process cannot access the file because it is being used by another process)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at java.io.FileOutputStream.&lt;init&gt;(Unknown Source)
+	at jxl.Workbook.createWorkbook(Workbook.java:301)
+	at jxl.Workbook.createWorkbook(Workbook.java:286)
+	at exe.ExcelRun.TestRunFinalProcess(ExcelRun.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>exe.ExcelRun@4566e5bd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -475,11 +521,6 @@ function toggleAllBoxes() {
 <td></td>
 <td>0</td>
 <td>exe.Arthadb_Automation@5700d6b1</td></tr>
-<tr>
-<td title='exe.ExcelRun.f()'><b>f</b><br>Test class: exe.ExcelRun</td>
-<td></td>
-<td>0</td>
-<td>exe.ExcelRun@4566e5bd</td></tr>
 </table><p>
 </body>
 </html>
