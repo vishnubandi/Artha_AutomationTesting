@@ -25,7 +25,7 @@ public class ExcelRun
 	WritableWorkbook myFirstWbook;
 	Connection con;
   @Test
-  public void f() throws IOException, WriteException 
+  public void TestRunFinalProcess() throws IOException, WriteException 
   {
 	  	myFirstWbook = Workbook.createWorkbook(new File("C:\\Artha\\ArthaDB_Automation_TestResults.xls"));
 	  	WritableSheet excelSheet = myFirstWbook.createSheet("TestResults", 0);

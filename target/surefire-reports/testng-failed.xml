@@ -3,6 +3,11 @@
 <suite verbose="0" name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="exe.ExcelRun">
+        <methods>
+          <include name="TestRunFinalProcess"/>
+        </methods>
+      </class> <!-- exe.ExcelRun -->
       <class name="exe.Arthadb_Automation">
         <methods>
           <include name="ArthaDB_AuditDates_Check_TC002"/>
