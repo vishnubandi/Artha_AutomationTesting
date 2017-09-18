@@ -79,7 +79,7 @@ public class Arthadb_Automation
 			  Class.forName("com.mysql.jdbc.Driver");
 			  con=DriverManager.getConnection("jdbc:mysql://localhost:3307/arthadb","root","mysql");   
 			  Statement stmt=con.createStatement();  
-			  ResultSet rs=stmt.executeQuery("SELECT *FROM homeserve.aepaudit where datediff(ExpDate,EffDate)<0"); 
+			  ResultSet rs=stmt.executeQuery("SELECT *FROM arthadb.aepaudit where datediff(ExpDate,EffDate)<0"); 
 			  List<String> TC002rs=new ArrayList<String>();
 			  while (rs.next()) 
 			  {
@@ -290,6 +290,7 @@ public class Arthadb_Automation
 						  e1.printStackTrace();
 				  } 
 	}
+	
 	@Test(priority=7)
 	public void ArthaDB_ChargeSign_Check_TC007() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
@@ -422,7 +423,7 @@ public class Arthadb_Automation
 						  e1.printStackTrace();
 				  } 
 	}
-
+	
 	@Test(priority=10)
 	public void ArthaDB_Record_Type_Check_TC010() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
@@ -432,7 +433,7 @@ public class Arthadb_Automation
 					  Class.forName("com.mysql.jdbc.Driver");
 					  con=DriverManager.getConnection("jdbc:mysql://localhost:3307/arthadb","root","mysql");   
 					  Statement stmt=con.createStatement();  
-					  ResultSet rs=stmt.executeQuery("SELECT * FROM arthadb.customers where SSN is null;"); 
+					  ResultSet rs=stmt.executeQuery("SELECT * FROM arthadb.customers where SSN is null"); 
 					  List<String> TC010rs=new ArrayList<String>();
 					  while (rs.next()) 
 					  {
@@ -466,10 +467,7 @@ public class Arthadb_Automation
 						  e1.printStackTrace();
 				  } 
 	}
-
-
-
-
+	
 	@Test(priority=11)
 	public void ArthaDB_Record_Type_Check_TC011() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
@@ -513,7 +511,7 @@ public class Arthadb_Automation
 						  e1.printStackTrace();
 				  } 
 	}
-
+	
 	@Test(priority=12)
 	public void ArthaDB_Premise_City_Check_TC012() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
@@ -557,7 +555,4 @@ public class Arthadb_Automation
 						  e1.printStackTrace();
 				  } 
 	}
-
-
 }
-
