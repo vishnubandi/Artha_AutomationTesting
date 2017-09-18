@@ -79,7 +79,7 @@ public class Arthadb_Automation
 			  Class.forName("com.mysql.jdbc.Driver");
 			  con=DriverManager.getConnection("jdbc:mysql://localhost:3307/arthadb","root","mysql");   
 			  Statement stmt=con.createStatement();  
-			  ResultSet rs=stmt.executeQuery("SELECT *FROM arthadb.aepaudit where datediff(ExpDate,EffDate)<0"); 
+			  ResultSet rs=stmt.executeQuery("SELECT *FROM arthadb.audit where datediff(ExpDate,EffDate)<0"); 
 			  List<String> TC002rs=new ArrayList<String>();
 			  while (rs.next()) 
 			  {
